@@ -10,14 +10,14 @@ def hello_world():
 
 @app.route("/check", methods=["GET", "POST"])
 def check():
-    c1 = False
-    ans1 = ""
+    c3 = False
+    ans3 = ""
 
     if request.method == "POST":
         pwd = request.form['pwd']
         if pwd == "aurjaoobt":
-            c1 = True
-            ans1 = "first link"
+            c3 = True
+            ans3 = "first link"
         else:
             return render_template("page.html")
-    return render_template("page.html", c1=c1, ans1=ans1)
+    return render_template("page.html", c1=c3, ans1=ans3)
