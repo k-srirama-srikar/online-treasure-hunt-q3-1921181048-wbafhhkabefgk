@@ -89,7 +89,7 @@ def check():
     if request.method == "POST":
         if user_id in users:
         # pwd = request.form['pwd']
-            if pwd == "https://www.youtube.com/watch?v=jtaqHzUhYdw":
+            if pwd == "janetaylor":
                 c2 = True
                 ans2 = "first link"
                 return welcome_to_r2()
